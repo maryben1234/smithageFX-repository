@@ -1,0 +1,168 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+
+
+
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b2430;
+  color: white;
+  padding: 20px 80px;
+  box-shadow: 0.5px 15px rgba(0,0, 0, 0.06);
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#navbar li{
+  list-style: none;
+  padding:0 20px ;
+  position: relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease-in-out ;
+
+}
+#navbar li a:hover{
+  color:#17cf97 ;
+}
+
+#navbar li a:hover ::after{
+content: "";
+width: 30%;
+height: 2px;
+background-color: #17cf97;
+position: absolute;
+bottom: -4px;
+left: 20px;
+}
+
+/* #mobile i{
+  color: #fff;
+} */
+
+.nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color:var(red);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+  
+}
+@media ( max-width:1024px) {
+  .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    background-color:#1b2430;
+    transition: 1s;
+    transform: translateY(-100%);
+
+    
+  }
+  .responsive_nav{
+    transform: none;
+  }
+  .nav-close-btn{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  #navbar{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  
+  }
+}
+
+
+
+
+.icon{
+
+    font-size: 60px;
+    color: #fb3e3e !important;
+    background-color: #ffffff;
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 88px;
+    /* gap: 10; */
+    box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%) !important;
+    
+       
+}
+@media (min-width:718px) {
+  .icon{
+    
+      font-size: 60px;
+      color: #fb3e3e !important;
+      background-color: #ffffff;
+      height: 80px;
+      width: 100px;
+      border-radius: 50%;
+      margin:auto;
+      /* gap: 10; */
+      box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%) !important;
+      
+         
+  }
+}
+
+
+@media(max-width: 718px){
+  .icon{
+    margin: auto;
+  }
+}
+
+.list-disc li::marker{
+  color: red  ;
+  padding-left: 40px;
+}
+
+
+.smithagefx-image{
+  width: 100px;
+  border-radius: 50%;
+}
