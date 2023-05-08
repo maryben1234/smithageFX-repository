@@ -1,65 +1,70 @@
-// import React from 'react';
-import {FaBars, FaTimes} from "react-icons/fa";
-import React, {useRef} from "react"; 
-import { Outlet, Link } from "react-router-dom";
-import "./navbar.css";
-import smithagefx from "../images/smithagefx.jpg";
-
-
- function Navber() {
-   const navRef= useRef();
-const showNavbar =() =>{
-    navRef.current.classList.toggle("responsive_nav");
-}
-
-  return (
-    <> 
-    <nav className='navbar' ref={navRef}>
-    <img src={smithagefx} className="smithagefx-image"></img>
-    
-    
-
-    <ul id='navbar'>
-   
-    
-
-    <li>
-    <Link to="/Home">Home</Link>
-    </li>
-    
-    <li>
-    <Link to="/Service">Service</Link>
-    </li>
-    <li>
-    <Link to="/Features">Features</Link>
-    </li>
-    <li>
-    <Link to="/Pricing">Pricing</Link>
-    </li>
-    <li>
-    <Link to="/Team">Team</Link>
-    </li>
-    <li>
-    <Link to="/Blog">Blog</Link>
-    </li>
-    <li>
-    <Link to="/Contact">Contact</Link>
-    </li>
-    
-    </ul>
-    
-    <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-    <FaTimes/>
-    </button>
-     </nav>
- 
-     <button className="nav-btn " onClick={showNavbar}>
-     <FaBars/>
-     </button>
-
-    <Outlet/>
-    </>
-  )
-}
-
-export default Navber
+import React, { useState } from 'react'
+  import DropDown from './Dropdown'
+  import Button from './Button'
+  import { Link } from 'react-router-dom'
+  import './Navbar.css'
+  import Times from '../images/times-svgrepo-com.svg'
+  import Bars from '../images/bars-svgrepo-com.svg'
+  
+  function Navbar() {
+  
+      const [click, setClick] = useState(false)
+      const [dropdown, setDropdown] = useState(false)
+      const changeClick = () => setClick(!click)
+      const closeMobileMenu = () => setClick(false)
+  
+      const onMouseEnter = () => {
+          setDropdown(true)
+      }
+  
+      const onMouseLeave = () => {
+          setDropdown(false)
+      }
+  
+      return (
+          <>
+              <section>
+                  <nav className="navbar">
+  
+                      <Link to='/' className='logo'> 
+                        <i className='fas fa-home' /> Pro-Blog </Link>
+  
+                      <div className="menu-icon" onClick={changeClick}>
+                          <i className={click ? 'fas fa-times' : 'fas fa-bars'} ></i>
+                      </div>
+  
+                      <ul className={click ? 'nav-side-menu start' : 'nav-side-menu'}>
+  
+                          <li className='nav-items'>
+                              <Link to="/" className='nav-links' onClick={closeMobileMenu}> Home </Link>
+                          </li>
+  
+                          <li className='nav-items'>
+                              <Link to="/about" className='nav-links' onClick={closeMobileMenu}> About </Link>
+                          </li>
+  
+                          <li className='nav-items' onClick={onMouseEnter} onMouseLeave={onMouseLeave} >
+                              <Link className='nav-links' onClick={closeMobileMenu}> Category <i className='fas fa-caret-down' />
+                                  {dropdown && <DropDown />}
+                              </Link>
+                          </li>
+  
+                          <li className='nav-items'>
+                              <Link to="/contact" className='nav-links' onClick={closeMobileMenu}> Contact </Link>
+                          </li>
+  
+                          <li className='nav-items'>
+                              <Link to="/sign-up" className='nav-links-button' onClick={closeMobileMenu}> Sign Up </Link>
+                          </li>
+  
+                      </ul>
+  
+                      <Button />
+  
+                  </nav>
+              </section>
+          </>
+      )
+  }
+  
+  export default Navbar;

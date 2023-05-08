@@ -1,13 +1,6 @@
 import React from 'react';
 import './App.css';
-
-
-import Navbar from './components/Navber';
-// import Navbar1 from './components/Navber1';
-// import Navbar from './components/Navbar';
-
-
-// import Navbarmenu from './components/menu/Navbarmenu';
+import Home from './pages/landing-pages/Home';
 
 
 
@@ -15,9 +8,8 @@ import Navbar from './components/Navber';
 function App() {
   return (
     <div>
-    
-     
-      <Navbar/>
+      <Home />
+      
     </div>
   );
 }
