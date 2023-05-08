@@ -1,6 +1,6 @@
-
+// import React from 'react';
 import {FaBars, FaTimes} from "react-icons/fa";
-import {useRef} from "react"; 
+import React, {useRef} from "react"; 
 import { Outlet, Link } from "react-router-dom";
 import "./navbar.css";
 import smithagefx from "../images/smithagefx.jpg";
