@@ -11,25 +11,27 @@ function Navbar() {
     const [dropdown, setDropdown] = useState(false)
     const [dropdown2, setDropdown2] = useState(false)
     const [dropdown3, setDropdown3] = useState(false)
+    
     const changeClick = () => setClick(!click)
-    const closeMobileMenu = () => setClick(false)
+      const closeMobileMenu = () => setClick(false)
 
+      const onMouseClick = () => {
+          setDropdown(!dropdown);
+      }
+      const onMouseClick2 = () => {
+          setDropdown2(!dropdown2);
+      }
 
-    //   const onMouseEnter = () => {
-    //       setDropdown(!dropdown);
-    //   }
-    //   const onMouseEnter2 = () => {
-    //       setDropdown2(!dropdown2);
+    //   const onMouseClick3 = () => {
+    //       setDropdown3(!dropdown3);
     //   }
 
     const onMouseEnter = () => {
         setDropdown(true)
-        // setDropdown2(true)
     }
 
     const onMouseLeave = () => {
         setDropdown(false)
-        // setDropdown2(false)
     }
 
     const onMouseEnter2 = () => {
@@ -51,7 +53,7 @@ function Navbar() {
     return (
         <>
             <section>
-                <nav className="navbar">
+                <nav className="navbar px-10">
 
                     <Link to='/' className='logo'>
                         <img src={Logo} className='' alt="" />
@@ -59,7 +61,7 @@ function Navbar() {
                     {/* <h6 className='' href="/">SmithageFX</h6> */}
                     </Link>
 
-                    <div className="menu-icon" onMouseEnter={onMouseEnter} >
+                    <div className="menu-icon" onClick={changeClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} ></i>
                     </div>
 
@@ -68,8 +70,20 @@ function Navbar() {
                         <li className='nav-items'>
                             <Link to="/" className='nav-links' onClick={closeMobileMenu}> HOME </Link>
                         </li>
-                        {/* onMouseLeave={onMouseLeave} */}
-                        <li className='nav-items' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                        <li className='nav-items hidden lg:block' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                            <Link className='nav-links flex items-end gap-1' > ABOUT <i class="fa-solid fa-angle-down"></i>
+                                {dropdown &&
+                                    <ul className='dropdown-menu w-52' onClick={closeMobileMenu}>
+                                        <li><a className='menu-items' href="/about#dgisleadership">DGIS Leadership</a></li>
+                                        <li><a className='menu-items' href="/about#history">History</a></li>
+                                        <li><a className='menu-items' href="/about#diversity">Diversity</a></li>
+                                        <li><a className='menu-items' href="/about#transition">Energy Transition</a></li>
+                                    </ul>
+                                }
+                            </Link>
+                        </li>
+
+                        <li className='nav-items lg:hidden block' onClick={onMouseClick}>
                             <Link className='nav-links' > ABOUT <i class="fa-solid fa-angle-down"></i>
                                 {dropdown &&
                                     <ul className='dropdown-menu w-52' onClick={closeMobileMenu}>
@@ -86,7 +100,20 @@ function Navbar() {
                             <Link to="/services" className='nav-links' onClick={closeMobileMenu}> SERVICES </Link>
                         </li>
 
-                        <li className='nav-items' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2} >
+                        <li className='nav-items hidden lg:block' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2} >
+                            <Link className='nav-links flex items-end gap-1' > CAREERS <i class="fa-solid fa-angle-down"></i>
+                                {dropdown2 &&
+                                    <ul className='dropdown-menu w-auto' onClick={closeMobileMenu}>
+                                        <li><a className='menu-items' href="/careers#whydgis">Why DGIS</a></li>
+                                        <li><a className='menu-items' href="careers#whatwelookfor">What are we looking for?</a></li>
+                                        <li><a className='menu-items' href="careers#trainings">Trainings and Internships</a></li>
+
+                                    </ul>
+                                }
+                            </Link>
+                        </li>
+
+                        <li className='nav-items  lg:hidden block' onClick={onMouseClick2} >
                             <Link className='nav-links' > CAREERS<i class="fa-solid fa-angle-down"></i>
                                 {dropdown2 &&
                                     <ul className='dropdown-menu w-auto' onClick={closeMobileMenu}>
@@ -104,7 +131,7 @@ function Navbar() {
                         </li>
 
                         <li className='nav-items' onMouseEnter={onMouseEnter3} onMouseLeave={onMouseLeave3} >
-                            <Link className='nav-links' > PRODUCTS <i class="fa-solid fa-angle-down"></i>
+                            <Link className='nav-links flex items-end gap-1' > PRODUCTS <i class="fa-solid fa-angle-down"></i>
                                 {dropdown3 &&
                                     <ul className='dropdown-menu w-auto' onClick={closeMobileMenu}>
                                         <li><a className='menu-items' href="/careers#whydgis">Packages</a></li>
