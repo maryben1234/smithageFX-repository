@@ -24,7 +24,7 @@ img {
 
 .nav-side-menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(111, auto);
   gap: 0 10px;
   width: 70vw;
   justify-content: end;
@@ -62,7 +62,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .nav-side-menu {
       display: flex;
       flex-direction: column;
@@ -139,4 +139,3 @@ img {
       height: auto;
   }
 }
-
