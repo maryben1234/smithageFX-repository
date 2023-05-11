@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import DropDown from './Dropdown'
 //   import Button from './Button'
 import { Link } from 'react-router-dom'
-import './navbar.css'
+import './Navbar.css'
 import Logo from '../images/smithagepic.jpg'
 
 function Navbar() {
