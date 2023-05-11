@@ -1,9 +1,11 @@
 
 import {FaBars, FaTimes} from "react-icons/fa";
+import {BsFacebook, BsInstagram} from "react-icons/bs"
 import {useRef} from "react"; 
 import { Outlet, Link } from "react-router-dom";
 import "./navbar.css";
-import smithagefx from "../images/smithagefx.jpg";
+import smithagepic from "../images/smithagepic.jpg";
+// import Dropdown from "./Dropdown";
 
 
  function Navber() {
@@ -15,7 +17,10 @@ const showNavbar =() =>{
   return (
     <> 
     <nav className='navbar' ref={navRef}>
-    <img src={smithagefx} className="smithagefx-image"></img>
+   <div> <img src={smithagepic} className="smithagefx-image"></img>
+  
+   </div>
+   
     
     
 
@@ -26,22 +31,19 @@ const showNavbar =() =>{
     <li>
     <Link to="/Home">Home</Link>
     </li>
-    
+    <li>
+    <Link to="/Home">About </Link>
+    </li>
     <li>
     <Link to="/Service">Service</Link>
     </li>
+   
+    
     <li>
-    <Link to="/Features">Features</Link>
+    <Link to="/Team">Careers</Link>
     </li>
-    <li>
-    <Link to="/Pricing">Pricing</Link>
-    </li>
-    <li>
-    <Link to="/Team">Team</Link>
-    </li>
-    <li>
-    <Link to="/Blog">Blog</Link>
-    </li>
+
+    
     <li>
     <Link to="/Contact">Contact</Link>
     </li>
@@ -51,6 +53,13 @@ const showNavbar =() =>{
     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
     <FaTimes/>
     </button>
+
+    <div>
+    <a href="https://www.facebook.com/profile"><BsFacebook/></a>
+   
+     </div>
+     
+
      </nav>
  
      <button className="nav-btn " onClick={showNavbar}>
