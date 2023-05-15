@@ -1,51 +1,233 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
+
+/*************topTab styles begin***********/
+.tabWrapper {
+  background: rgb(27, 189, 54);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 90px;
+}
+.tabWrapper > div:nth-child(1) {
+  font-size: 20px;
+  color: white;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.tabWrapper > div:nth-child(2) {
+  display: flex;
+  gap: 7px;
+  font-size: 20px;
+  color: white;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+/*************topTab styles end***********/
+
+/*************contactDetails styles begin***********/
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: fit-content;
   margin: auto;
-  background: #f0f0f0;
-  box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+  background: #ffffff;
+  height: fit-content;
+  padding: 2rem 1rem;
+  margin-top: 60px;
+  border-radius: 6px;
+  box-shadow: 3px 6px 10px 6px #ededed;
 }
 .wrapper__elem {
   display: flex;
+  justify-content: center;
 }
+
+/* general*/
+.wrapper__elem--itemOne,
+.wrapper__elem--itemTwo,
+.wrapper__elem--itemThree {
+  width: 380px;
+}
+
+/* itemOne styles*/
 .wrapper__elem--itemOne > div {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 12px;
 }
+.wrapper__elem--itemOne > div p {
+  font-size: 22px;
+  font-weight: 700;
+}
+.wrapper__elem--itemOne > aside div {
+  margin-top: 10px;
+  font-size: 17px;
+  color: rgb(78, 76, 76);
+  line-height: 25px;
+  padding: 0 0 0 65px;
+}
+.wrapper__elem--itemOne > div:first-child > div {
+  font-size: 30px;
+  color: rgb(27, 189, 54);
+  border: 0.7px solid rgb(27, 189, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  border-radius: 100%;
+  transition: 0.8s all;
+}
+.wrapper__elem--itemOne:hover > div:first-child > div {
+  background: rgb(27, 189, 54);
+  color: white;
+  transition: 0.8s all;
+}
+
+/* itemTwo styles*/
 .wrapper__elem--itemTwo > div {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 15px;
 }
+.wrapper__elem--itemTwo > div p {
+  font-size: 22px;
+  font-weight: 700;
+}
+.wrapper__elem--itemTwo > aside {
+  font-size: 17px;
+  line-height: 25px;
+  padding: 0 0 0 65px;
+}
+.wrapper__elem--itemTwo > aside a {
+  color: rgb(27, 189, 54);
+  text-decoration: none;
+}
+.wrapper__elem--itemTwo > div:first-child > div {
+  font-size: 30px;
+  color: rgb(27, 189, 54);
+  border: 0.7px solid rgb(27, 189, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  border-radius: 100%;
+  transition: 0.8s all;
+}
+.wrapper__elem--itemTwo:hover > div:first-child > div {
+  background: rgb(27, 189, 54);
+  color: white;
+  transition: 0.8s all;
+}
+.wrapper__elem--itemTwo > div p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* itemThree styles*/
 .wrapper__elem--itemThree > div {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 15px;
 }
-
-.wrapper__elem--itemOne:hover > div:first-child > div {
-  background: #000;
-  color: blue;
-  transition: 1s all;
+.wrapper__elem--itemThree > div p {
+  font-size: 22px;
+  font-weight: 700;
 }
-.wrapper__elem--itemTwo:hover > div:first-child > div {
-  background: #000;
-  color: blue;
-  transition: 1s all;
+.wrapper__elem--itemThree > aside {
+  font-size: 17px;
+  line-height: 25px;
+  padding: 0 0 0 65px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper__elem--itemThree > aside a {
+  text-decoration: none;
+  color: rgb(78, 76, 76);
+}
+.wrapper__elem--itemThree > div:first-child > div {
+  font-size: 30px;
+  color: rgb(27, 189, 54);
+  border: 0.7px solid rgb(27, 189, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  border-radius: 100%;
+  transition: 0.8s all;
 }
 .wrapper__elem--itemThree:hover > div:first-child > div {
-  background: #000;
-  color: blue;
-  transition: 1s all;
+  background: rgb(27, 189, 54);
+  color: white;
+  transition: 0.8s all;
 }
+.wrapper__elem--itemThree > div p {
+  font-size: 22px;
+  font-weight: 700;
+}
+/*************contactDetails styles end***********/
+
+/*************contactForm styles begin***********/
+.formWrapper {
+  width: 77%;
+  margin: auto;
+  background: #ffffff;
+  height: fit-content;
+  padding: 2rem 1rem;
+  margin-top: 60px;
+  border-radius: 6px;
+  box-shadow: 3px 6px 10px 6px #ededed;
+}
+.formWrapper__inputGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 25px;
+}
+.formWrapper__inputGrid--itemOne {
+  outline: none;
+  font-size: 17px;
+  padding: 17px 0;
+  grid-column: 1/2;
+  text-indent: 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+}
+.formWrapper__inputGrid--itemTwo {
+  outline: none;
+  font-size: 17px;
+  padding: 17px 0;
+  grid-column: 2/3;
+  text-indent: 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+}
+.formWrapper__inputGrid--itemThree {
+  grid-column: 1/3;
+  outline: none;
+  font-size: 17px;
+  padding: 17px 0;
+  text-indent: 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+}
+textarea {
+  width: 100%;
+  margin-top: 25px;
+  text-indent: 14px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 17px;
+  padding: 17px 0;
+  border: 1px solid rgb(204, 204, 204);
+}
+/*************contactForm styles end***********/
