@@ -6,7 +6,7 @@
 
 /*************topTab styles begin***********/
 .tabWrapper {
-  background: rgb(27, 189, 54);
+  background: rgb(77, 122, 218);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,17 +29,29 @@
   -moz-user-select: none;
   -webkit-user-select: none;
 }
+@media (max-width: 450px) {
+  .tabWrapper {
+    height: 60px;
+    padding: 0 30px;
+  }
+  .tabWrapper > div:nth-child(1) {
+    font-size: 15px;
+  }
+  .tabWrapper > div:nth-child(2) {
+    font-size: 15px;
+  }
+}
 /*************topTab styles end***********/
 
 /*************contactDetails styles begin***********/
 .wrapper {
   display: flex;
-  justify-content: center;
+  /* justify-content: space-around; */
   align-items: center;
-  width: fit-content;
+  width: 1110px;
   margin: auto;
   background: #ffffff;
-  height: fit-content;
+  height: 80%;
   padding: 2rem 1rem;
   margin-top: 60px;
   border-radius: 6px;
@@ -54,7 +66,7 @@
 .wrapper__elem--itemOne,
 .wrapper__elem--itemTwo,
 .wrapper__elem--itemThree {
-  width: 380px;
+  width: 350px;
 }
 
 /* itemOne styles*/
@@ -77,8 +89,8 @@
 }
 .wrapper__elem--itemOne > div:first-child > div {
   font-size: 30px;
-  color: rgb(27, 189, 54);
-  border: 0.7px solid rgb(27, 189, 54);
+  color: rgb(77, 122, 218);
+  border: 0.7px solid rgb(77, 122, 218);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +99,7 @@
   transition: 0.8s all;
 }
 .wrapper__elem--itemOne:hover > div:first-child > div {
-  background: rgb(27, 189, 54);
+  background: rgb(77, 122, 218);
   color: white;
   transition: 0.8s all;
 }
@@ -109,13 +121,13 @@
   padding: 0 0 0 65px;
 }
 .wrapper__elem--itemTwo > aside a {
-  color: rgb(27, 189, 54);
+  color: rgb(77, 122, 218);
   text-decoration: none;
 }
 .wrapper__elem--itemTwo > div:first-child > div {
   font-size: 30px;
-  color: rgb(27, 189, 54);
-  border: 0.7px solid rgb(27, 189, 54);
+  color: rgb(77, 122, 218);
+  border: 0.7px solid rgb(77, 122, 218);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +136,7 @@
   transition: 0.8s all;
 }
 .wrapper__elem--itemTwo:hover > div:first-child > div {
-  background: rgb(27, 189, 54);
+  background: rgb(77, 122, 218);
   color: white;
   transition: 0.8s all;
 }
@@ -157,8 +169,8 @@
 }
 .wrapper__elem--itemThree > div:first-child > div {
   font-size: 30px;
-  color: rgb(27, 189, 54);
-  border: 0.7px solid rgb(27, 189, 54);
+  color: rgb(77, 122, 218);
+  border: 0.7px solid rgb(77, 122, 218);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,7 +179,7 @@
   transition: 0.8s all;
 }
 .wrapper__elem--itemThree:hover > div:first-child > div {
-  background: rgb(27, 189, 54);
+  background: rgb(77, 122, 218);
   color: white;
   transition: 0.8s all;
 }
@@ -175,6 +187,83 @@
   font-size: 22px;
   font-weight: 700;
 }
+
+@media (max-width: 1069px) {
+  .wrapper__elem--itemOne,
+  .wrapper__elem--itemTwo,
+  .wrapper__elem--itemThree {
+    width: 300px;
+  }
+  .wrapper {
+    width: 970px;
+  }
+}
+@media (max-width: 996px) {
+  .wrapper__elem--itemOne,
+  .wrapper__elem--itemTwo,
+  .wrapper__elem--itemThree {
+    width: 260px;
+  }
+  .wrapper {
+    width: 800px;
+  }
+}
+@media (max-width: 996px) {
+  .wrapper__elem--itemOne,
+  .wrapper__elem--itemTwo,
+  .wrapper__elem--itemThree {
+    width: 260px;
+  }
+  .wrapper {
+    width: 800px;
+  }
+}
+@media (max-width: 910px) {
+  .wrapper__elem--itemOne,
+  .wrapper__elem--itemTwo,
+  .wrapper__elem--itemThree {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .wrapper {
+    width: 600px;
+  }
+  .wrapper__elem {
+    display: block;
+  }
+  .wrapper__elem--itemOne > div p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .wrapper__elem--itemTwo > div p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .wrapper__elem--itemThree > div p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 640px) {
+  .wrapper__elem--itemOne > div:first-child > div {
+    font-size: 20px;
+    padding: 6px;
+  }
+  .wrapper__elem--itemTwo > div:first-child > div {
+    font-size: 20px;
+    padding: 6px;
+  }
+  .wrapper__elem--itemThree > div:first-child > div {
+    font-size: 20px;
+    padding: 6px;
+  }
+}
+@media (max-width: 630px) {
+  .wrapper {
+    width: 300px;
+  }
+}
+
 /*************contactDetails styles end***********/
 
 /*************contactForm styles begin***********/
@@ -229,5 +318,28 @@ textarea {
   font-size: 17px;
   padding: 17px 0;
   border: 1px solid rgb(204, 204, 204);
+}
+@media (max-width: 642px) {
+  .formWrapper {
+    width: 100%;
+  }
+  .formWrapper__inputGrid {
+    grid-gap: 17px;
+  }
+  .formWrapper__inputGrid--itemOne {
+    font-size: 12px;
+    padding: 8px 0;
+    width: 100%;
+  }
+  .formWrapper__inputGrid--itemTwo {
+    font-size: 12px;
+    padding: 8px 0;
+    width: 100%;
+  }
+  .formWrapper__inputGrid--itemThree {
+    font-size: 12px;
+    padding: 8px 0;
+    width: 100%;
+  }
 }
 /*************contactForm styles end***********/

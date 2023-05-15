@@ -4,11 +4,13 @@ import Footer from "../footer/Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <Navbar />
-      {children}
-      {/* <Footer /> */}
-    </div>
+    <>
+      <section>
+        <Navbar />
+        <div style={{ padding: "0 13px" }}>{children}</div>
+        <Footer />
+      </section>
+    </>
   );
 };
 

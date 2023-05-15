@@ -19,30 +19,14 @@ const ContactDetails = () => {
               <div>
                 <CiLocationOn />
               </div>
-              <p>Locations:</p>
+              <p>Location:</p>
             </div>
             <aside>
               <div>
-                <strong>Abuja Office</strong>
-                <p>Suite 3</p>
-                <p>6th Floor Nusaiba Towers Plot</p>
-                <p>117 Ahmadu Bello Way, FCT.</p>
-              </div>
-              <div>
-                <strong>Owerri Office</strong>
-                <p>Shop #3 The Sun Place</p>
-                <p>Industrial Cluster Road, Naze</p>
-                <p>Owerri, Imo State.</p>
-              </div>
-              <div>
-                <strong>Lagos Office</strong>
-                <p>B195 Electronics Font Line, Ojo</p>
-                <p>Alaba Int’l Market, Lagos State.</p>
-              </div>
-              <div>
-                <strong>Port Harcourt Office</strong>
-                <p>#22 Okija St. DLine Port</p>
-                <p>Harcourt, Rivers State.</p>
+                <strong>Office</strong>
+                <p>
+                 34 Brooks Street, Uyo, Akwa Ibom State
+                </p>
               </div>
             </aside>
           </section>
@@ -54,7 +38,7 @@ const ContactDetails = () => {
               <p>Email:</p>
             </div>
             <aside>
-              <a href="mailto:mail@gmail.com">smithagefx@gmail.com</a>
+              <a href="mailto:maryben698@gmail.com">maryben698@gmail.com</a>
             </aside>
           </section>
           <section className="wrapper__elem--itemThree">
@@ -65,8 +49,8 @@ const ContactDetails = () => {
               <p>Call:</p>
             </div>
             <aside>
-              <a href="tel:+ 9034688749">9034688749</a>
-              <a href="tel:+ 9034688749">9034688749</a>
+              <a href="tel:+ 8068482653">08068482653</a>
+             
             </aside>
           </section>
         </div>

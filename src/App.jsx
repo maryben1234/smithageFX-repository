@@ -1,15 +1,21 @@
-import React from 'react';
-import './index.css';
-import { Router, Routes, Route } from 'react-router';
-import Contact from './pages/contact/Contact';
-import Home from './pages/landing-pages/Home';
+import React from "react";
+import "./App.css";
+import About from "./components/About";
+import Services from "./components/Services";
+import Home from "./pages/landing-pages/Home";
+import Contact from "./pages/contact/Contact";
+import { Route, Routes } from "react-router";
 
 function App() {
   return (
-    <Routes>
-      <Route exact path='/' element={ <Home />}/>
-     <Route path='/contact' element={<Contact/>}/>
-    </Routes>
+    <div>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/services" element={<Services />} />
+        <Route exact path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
   );
 }
 

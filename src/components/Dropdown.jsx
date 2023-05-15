@@ -36,7 +36,7 @@ import React, { useState } from 'react'
 // export default MenuItems
   
       return (
-          <>
+          <section>
               <section className='drop-section'>
                   <ul onClick={handleClick} className={click ? 'drop-menu' : 'dropdown-menu'}>
                       {MenuItems.map((item, index) => {
@@ -50,7 +50,7 @@ import React, { useState } from 'react'
                       })}
                   </ul>
               </section>
-          </>
+          </section>
       )
   }
   
