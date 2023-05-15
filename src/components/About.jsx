@@ -8,6 +8,7 @@ import { BsInstagram } from "react-icons/bs";
 import { BsTelegram } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
+import './About.css'
 
 function About() {
   return (
@@ -26,7 +27,7 @@ function About() {
                 <img src={image3} className=" image1"></img>
               </div>
 
-              <p className="mt-5  text-center  ">
+              <p className="mt-7  text-center animate-bounce r  ">
                 Dr. SMITH DENNIC BENJAMIN is the Chief Executive Officer and
                 Director of SMITHAGEFX. He holds a Bachelor of Engineering
                 degree in Electrical and Electronics Engineering, university of

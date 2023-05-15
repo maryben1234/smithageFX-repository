@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+  }
+  
+  
+  .div-wrap:active{
+    opacity: 0.5;
+    }
+  
+    
+  
+    .About-image1{
+      width: 100px;
+    height: fit-content;
+     border-radius: 50px;
+     position: relative;
+     bottom: 35px;
+     left: 40%;
+     
+    }
+  
+    .image1{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 10px;
+  
+    }
+    .Aboutsection-div{
+    width:fit-content;
+    height:fit-content ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #8f8d8d;
+    
+    
+    }
+   .About-footerdiv{
+    /* background-color: #1b2430; */
+    background-color: #212529;
+    width: 100%;
+    height: 100%;
+   }
+   .copyright-div{
+    background-color: #000;
+    color: white;
+    
+   }
+   .About-icons{
+    width: 100%;
+    height: 100%;
+   }

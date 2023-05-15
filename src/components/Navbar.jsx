@@ -74,10 +74,10 @@ function Navbar() {
                             <Link className='nav-links flex items-end gap-1' > ABOUT <i class="fa-solid fa-angle-down"></i>
                                 {dropdown &&
                                     <ul className='dropdown-menu w-52' onClick={closeMobileMenu}>
-                                        <li><a className='menu-items' href="/about#dgisleadership">DGIS Leadership</a></li>
+                                        <li><a className='menu-items' href="/about#smithageFX leadership"> smithageFX Leadership</a></li>
                                         <li><a className='menu-items' href="/about#history">History</a></li>
-                                        <li><a className='menu-items' href="/about#diversity">Diversity</a></li>
-                                        <li><a className='menu-items' href="/about#transition">Energy Transition</a></li>
+                                        <li><a className='menu-items' href="/about#vision">Vision</a></li>
+                                        <li><a className='menu-items' href="/about#mision">Mission</a></li>
                                     </ul>
                                 }
                             </Link>
@@ -87,10 +87,10 @@ function Navbar() {
                             <Link className='nav-links' > ABOUT <i class="fa-solid fa-angle-down"></i>
                                 {dropdown &&
                                     <ul className='dropdown-menu w-52' onClick={closeMobileMenu}>
-                                        <li><a className='menu-items' href="/about#dgisleadership">DGIS Leadership</a></li>
+                                        <li><a className='menu-items' href="/about#sgfxleadership">SGFX Leadership</a></li>
                                         <li><a className='menu-items' href="/about#history">History</a></li>
-                                        <li><a className='menu-items' href="/about#diversity">Diversity</a></li>
-                                        <li><a className='menu-items' href="/about#transition">Energy Transition</a></li>
+                                        <li><a className='menu-items' href="/about#vision">Vision</a></li>
+                                        <li><a className='menu-items' href="/about#mission">Mission</a></li>
                                     </ul>
                                 }
                             </Link>
@@ -101,12 +101,13 @@ function Navbar() {
                         </li>
 
                         <li className='nav-items hidden lg:block' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2} >
-                            <Link className='nav-links flex items-end gap-1' > CAREERS <i class="fa-solid fa-angle-down"></i>
+                            <Link className='nav-links flex items-end gap-1' > ACADEMY <i class="fa-solid fa-angle-down"></i>
                                 {dropdown2 &&
                                     <ul className='dropdown-menu w-auto' onClick={closeMobileMenu}>
-                                        <li><a className='menu-items' href="/careers#whydgis">Why DGIS</a></li>
+                                        <li><a className='menu-items' href="/careers#whydgis">Why smithageFX</a></li>
                                         <li><a className='menu-items' href="careers#whatwelookfor">What are we looking for?</a></li>
-                                        <li><a className='menu-items' href="careers#trainings">Trainings and Internships</a></li>
+                                        <li><a className='menu-items' href="careers#trainings">Training section</a></li>
+                                        <li><a className='menu-items' href="careers#trainings">Trainings and mentorship</a></li>
 
                                     </ul>
                                 }
@@ -114,7 +115,7 @@ function Navbar() {
                         </li>
 
                         <li className='nav-items  lg:hidden block' onClick={onMouseClick2} >
-                            <Link className='nav-links' > CAREERS<i class="fa-solid fa-angle-down"></i>
+                            <Link className='nav-links' > ACADEMY<i class="fa-solid fa-angle-down"></i>
                                 {dropdown2 &&
                                     <ul className='dropdown-menu w-auto' onClick={closeMobileMenu}>
                                         <li><a className='menu-items' href="/careers#whydgis">Why DGIS</a></li>
@@ -126,12 +127,10 @@ function Navbar() {
                             </Link>
                         </li>
 
-                        <li className='nav-items'>
-                            <Link to="/portfolio" className='nav-links' onClick={closeMobileMenu}> PORTFOLIO </Link>
-                        </li>
+                                
 
                         <li className='nav-items' onMouseEnter={onMouseEnter3} onMouseLeave={onMouseLeave3} >
-                            <Link className='nav-links flex items-end gap-1' > PRODUCTS <i class="fa-solid fa-angle-down"></i>
+                            <Link className='nav-links flex items-end gap-1' > PORTFOLIO <i class="fa-solid fa-angle-down"></i>
                                 {dropdown3 &&
                                     <ul className='dropdown-menu w-auto' onClick={closeMobileMenu}>
                                         <li><a className='menu-items' href="/careers#whydgis">Packages</a></li>

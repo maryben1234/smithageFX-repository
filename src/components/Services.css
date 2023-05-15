@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+  }
+
+  .services-box{
+   
+    box-shadow: 3px 3px 3px 5px lightgray;
+  }
+  .service-icon{
+    
+    font-size: 60px;
+    color:#03033c!important;
+   
+  width: 30%;
+  height: 30%;
+  margin-top: 10%;
+    border-radius: 50%;
+    margin-left: 30%;
+    box-shadow: 3px 3px 3px 5px lightgray;
+    
+  }

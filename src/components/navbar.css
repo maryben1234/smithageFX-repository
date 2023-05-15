@@ -50,6 +50,7 @@ img {
 .nav-links:hover {
   background-color: white;
   border-radius: 5px;
+  color:rgb(19, 19, 161);
 }
 
 .fa-bars {
@@ -122,9 +123,9 @@ img {
       transition: 0s;
   }
 
-  /* .nav-links:hover {
-      color: #fff;
-  } */
+  .nav-links:hover {
+      color: blue;
+  }
 
   .logo {
       position: absolute;
