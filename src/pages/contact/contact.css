@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+button {
+  display: block;
+}
+
 /*************topTab styles begin***********/
 .tabWrapper {
   background: rgb(77, 122, 218);
