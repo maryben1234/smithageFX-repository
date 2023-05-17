@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <>
       <section>
         <Navbar />
-        <div style={{ padding: "0 13px" }}>{children}</div>
+        <div style={{ padding: "0" }}>{children}</div>
         <Footer />
       </section>
     </>

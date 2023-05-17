@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+// import DropDown from './Dropdown'
+//   import Button from './Button'
 import { Link } from 'react-router-dom'
-import './Navbar.css'
+import './navbar.css'
 import Logo from '../../images/smithagepic.jpg'
 
 function Navbar() {
@@ -19,6 +21,10 @@ function Navbar() {
       const onMouseClick2 = () => {
           setDropdown2(!dropdown2);
       }
+
+    //   const onMouseClick3 = () => {
+    //       setDropdown3(!dropdown3);
+    //   }
 
     const onMouseEnter = () => {
         setDropdown(true)
@@ -43,6 +49,7 @@ function Navbar() {
     const onMouseLeave3 = () => {
         setDropdown3(false)
     }
+
     return (
         <>
             <section>
@@ -50,6 +57,8 @@ function Navbar() {
 
                     <Link to='/' className='logo'>
                         <img src={Logo} className='' alt="" />
+                        {/* <i className='fas fa-home' />  */}
+                    {/* <h6 className='' href="/">SmithageFX</h6> */}
                     </Link>
 
                     <div className="menu-icon" onClick={changeClick}>
