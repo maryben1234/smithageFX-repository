@@ -5,6 +5,10 @@ import Image3 from '../images/trading-lines.jpeg'
 import './carousel.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+// import Rotate from 'react-reveal/Rotate';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import 'animate.css/animate.min.css';
+
 
 export default function Carousels() {
     return (
@@ -14,12 +18,16 @@ export default function Carousels() {
                 <div>
                     <div className=''>
                         <img src={Image1} className='' />
-                               <div className='carousel-text'>
-                               <p>
+                      
+
+                    </div>
+                    <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
+                            <div >
+                                <p>
                                     Welcome to SmithFx
                                 </p>
-                               </div>
-                    </div>
+                            </div>
+                        </AnimationOnScroll>
                 </div>
             </div>
 
@@ -27,11 +35,13 @@ export default function Carousels() {
                 <div className=''>
                     <div className=''>
                         <img src={Image2} className='' />
-                        <div className='carousel-text'>
-                               <p>
+                        <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
+                            <div >
+                                <p>
                                     Welcome to SmithFx
                                 </p>
-                               </div>
+                            </div>
+                        </AnimationOnScroll>
                     </div>
                 </div>
             </div>
@@ -40,11 +50,13 @@ export default function Carousels() {
                 <div className=''>
                     <div className=''>
                         <img src={Image3} className='' />
-                        <div className='carousel-text'>
-                               <p>
+                        <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
+                            <div >
+                                <p>
                                     Welcome to SmithFx
                                 </p>
-                               </div>
+                            </div>
+                        </AnimationOnScroll>
                     </div>
 
                 </div>

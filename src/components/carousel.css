@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .carousel.carousel-slider {
-    height: 800px;
+    height: fit-content;
 }
 
 /* .carousel .slider {
@@ -19,7 +19,7 @@
     width: 17px !important;
     height: 7px !important;
     margin: 0 3px !important;
-    border-radius: 27% !important;
+    /* border-radius: 27% !important; */
 }
 
 .carousel .control-dots .dot.selected {
@@ -31,14 +31,14 @@
 
 .carousel .slide img {
     width: 100% !important ;
-    /* height: 800px; */
+    height: fit-content;
     /* border-radius: 50%; */
     object-fit: cover;
 }
 
 .carousel-text {
     position: absolute;
-    top: 24rem;
+    top: 16rem;
     left: 0;
     background: black;
     color: white;
@@ -50,6 +50,10 @@
 
 .carousel.carousel-slider .control-arrow, .carousel .carousel-status {
     display: none !important;
+}
+
+.animate__animated {
+    opacity: unset !important;
 }
 
 @media screen and (max-width: 768px) {

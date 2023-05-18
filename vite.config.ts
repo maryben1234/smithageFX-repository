@@ -9,4 +9,9 @@ export default defineConfig({
     outDir: 'build',
   },
   plugins: [reactRefresh()],
+
+  optimizeDeps: {
+    exclude: ['react-reveal']
+  }
+
 })
