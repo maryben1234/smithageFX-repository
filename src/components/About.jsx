@@ -6,10 +6,12 @@ import image2 from "../images/image2.jpg";
 import image3 from "../images/image3.jpg";
 
 import './About.css'
+import NavBar from "./navbar/Navbar";
 
 function About() {
   return (
     <div className="">
+      <NavBar />
       <section>
         <div className="grid md:grid-cols-1   text-center mr-100 ">
           <div className=" text-black md:space-x-6  p-10  ">
