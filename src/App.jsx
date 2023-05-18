@@ -6,6 +6,7 @@ import Home from "./pages/landing-pages/Home";
 import Contact from "./pages/contact/Contact";
 import { Route, Routes } from "react-router";
 
+
 function App() {
   return (
     <div>
