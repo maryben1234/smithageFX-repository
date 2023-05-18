@@ -77,7 +77,7 @@ const ContactForm = () => {
             type="submit"
             placeholder="Subject"
             value="Send"
-            className="bg-[#4d7ada] hover:bg-[#a8d2dd] rounded-lg px-[4rem] py-2 text-white"
+            className="flex justify-center mx-auto mt-2 bg-[#4d7ada] hover:bg-[#a8d2dd] rounded-lg px-[4rem] py-2 text-white"
           />
         </form>
       </motion.section>

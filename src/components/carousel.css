@@ -38,14 +38,19 @@
 
 .carousel-text {
     position: absolute;
-    top: 16rem;
+    top: 0;
+    bottom: 0;
     left: 0;
-    background: black;
+    background: rgba(0, 0, 0, 0.637);
     color: white;
     height: 200px;
     right: 0;
-    width: 50%;
+    width: 60%;
+    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.2);
     margin: auto;
+    font-size: x-large;
+    font-weight: 700;
+    padding-top: 1rem;
 }
 
 .carousel.carousel-slider .control-arrow, .carousel .carousel-status {
@@ -57,13 +62,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .carousel.carousel-slider {
-        height: 550px;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .carousel.carousel-slider {
-        height: 500px;
+    .carousel-text {
+        height: fit-content;
+        padding: 2rem 0;
     }
 }

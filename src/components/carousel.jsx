@@ -16,7 +16,7 @@ export default function Carousels() {
         <Carousel infiniteLoop useKeyboardArrows autoPlay>
             <div className=''>
                 <div>
-                    <div className=''>
+                    <div className='md:h-[800px] h-fit'>
                         <img src={Image1} className='' />
                       
 
@@ -33,7 +33,7 @@ export default function Carousels() {
 
             <div className=''>
                 <div className=''>
-                    <div className=''>
+                    <div className='md:h-[800px] h-fit'>
                         <img src={Image2} className='' />
                         <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
                             <div >
@@ -48,7 +48,7 @@ export default function Carousels() {
 
             <div className=''>
                 <div className=''>
-                    <div className=''>
+                    <div className='md:h-[800px] h-fit'>
                         <img src={Image3} className='' />
                         <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
                             <div >

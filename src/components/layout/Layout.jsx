@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <section>
-        {/* <Navbar /> */}
+        <Navbar />
         <div style={{ padding: "0" }}>{children}</div>
         <Footer />
       </section>

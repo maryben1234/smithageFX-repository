@@ -4,13 +4,11 @@ import Layout from "../../components/layout/Layout";
 import CarouselComponent from "../../components/CarouselComponent";
 import SmithfxVideo from '../../images/smithfx-marketing-video.mp4'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import Nav from '../../components/navbar/nav'
 
 function Home() {
   return (
     <div className="">
       <Layout>
-        <Nav />
           <CarouselComponent />
 
           <AnimationOnScroll animateIn="animate__fadeInUp">
