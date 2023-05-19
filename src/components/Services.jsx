@@ -6,14 +6,13 @@ import { BsFillHouseLockFill } from "react-icons/bs";
 import { AiOutlineBank } from "react-icons/ai";
 import { BiDiamond } from "react-icons/bi";
 import { BsCoin } from "react-icons/bs";
-// import {video} from "../images/video1.mp4";
-// import {DefaultPlayer} from "react-htnl5video";
-// import video1 from "../video1.mp4";
+import Navbar from './navbar/Navbar'
 // import './Navbar.css'
 
 function Services() {
   return (
     <div>
+      <Navbar />
       <div className="grid md:grid-cols-3  gap-8 p-5 text-center ">
 
         <div className="bg-white services-box">
