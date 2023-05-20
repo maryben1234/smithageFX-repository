@@ -21,3 +21,15 @@
     box-shadow: 3px 3px 3px 5px lightgray;
     
   }
+  /* .vidio-divsection{
+
+    background-image: url("https://metatradersoft.net/uploads/posts/2017-04/1491231016_logo.png");
+    color: black;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+  } */
+  .vide-div{
+    width: 50%;
+  }
