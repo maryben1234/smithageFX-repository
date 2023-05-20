@@ -4,6 +4,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Home from "./pages/landing-pages/Home";
 import Contact from "./pages/contact/Contact";
+import Projects from './components/Projects'
 import Academy from './components/Academy'
 import { Route, Routes } from "react-router";
 
@@ -17,9 +18,9 @@ function App() {
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/academy" element={<Academy />} />
+        <Route exact path="/projects" element={<Projects />} />
       </Routes>
     </div>
   );
 }
-
 export default App;

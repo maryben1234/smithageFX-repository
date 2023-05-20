@@ -3,6 +3,7 @@ import "./Academy.css";
 import image6 from "../images/image6.jpg";
 import image10 from "../images/image10.jpg";
 import Button from "./Button";
+import Sheetdb from "./sheetdb/sheetdb";
 import Layout from "./layout/Layout";
 
 function Academy() {
@@ -137,6 +138,11 @@ function Academy() {
             className="image1"
             src="https://eq-cdn.equiti-me.com/website/images/all-products.original.2e16d0ba.fill-400x400.format-webp_qlJenG7.webp "
           ></img>
+
+          <div>
+                  <Sheetdb />
+          </div>
+
         </div>
         <div className="training section   bg-black text-white">
           forex market123456
