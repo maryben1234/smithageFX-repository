@@ -44,7 +44,7 @@ const ContactForm = () => {
         className="formWrapper"
       >
         <form ref={form} onSubmit={sendEmail}>
-          {status && renderAlert()}
+
           <div className="formWrapper__inputGrid">
             <input
               type="text"
@@ -76,6 +76,8 @@ const ContactForm = () => {
             name="message"
             required
           ></textarea>
+
+          {status && renderAlert()}
 
           <input
             type="submit"
