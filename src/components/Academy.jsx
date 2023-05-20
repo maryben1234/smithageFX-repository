@@ -3,9 +3,11 @@ import "./Academy.css";
 import image6 from "../images/image6.jpg";
 import image10 from "../images/image10.jpg";
 import Button from "./Button";
+import Layout from "./layout/Layout";
 
 function Academy() {
   return (
+    <Layout>
     <div className="">
       <section className="">
         <div className="">
@@ -141,6 +143,7 @@ function Academy() {
         </div>
       </section>
     </div>
+    </Layout>
   );
 }
 

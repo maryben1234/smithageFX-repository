@@ -4,6 +4,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Home from "./pages/landing-pages/Home";
 import Contact from "./pages/contact/Contact";
+import Academy from './components/Academy'
 import { Route, Routes } from "react-router";
 
 
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/academy" element={<Academy />} />
       </Routes>
     </div>
   );
