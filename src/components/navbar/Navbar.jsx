@@ -112,10 +112,10 @@ export default function NavBar() {
                                             <Link to="/about">SGFX Leadership</Link>
                                         </li>
                                         <li className="text-gray-600 hover:text-blue-600">
-                                            <a href="/about#history">History</a>
+                                            <Link to="/about">History</Link>
                                         </li>
                                         <li className="text-gray-600 hover:text-blue-600">
-                                            <a href="/about#vision">Vision</a>
+                                            <Link to="/about">Vision</Link>
                                         </li>
                                     </ul>
                                 )}
