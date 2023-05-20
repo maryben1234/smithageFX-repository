@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+ 
+.Academysection-div{
+    background-image: url("../images/image10.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+
+}
+
+.image2{
+    width: 80%;
+    height: fit-content;
+    box-sizing: border-box;
+    
+    vertical-align: middle;
+    box-sizing: border-box;
+    
+  }
+  .image3{
+    margin: auto;
+    /* background-color: #0cc6f5; */
+    width: 80%;
+    height: auto;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    
+  
+  }
+
+
