@@ -95,8 +95,8 @@ export default function NavBar() {
                             }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600">
-                            <Link to="/" className='nav-links'> HOME </Link>
+                            <li className=" hover:text-blue-600">
+                            <Link to="/" className='font-bold text-sm'> HOME </Link>
                             </li>
 
                             <li
@@ -105,11 +105,11 @@ export default function NavBar() {
                                 onMouseLeave={handleMouseLeave}
                                 onClick={onMouseClick}
                             >
-                                <Link  className='' > ABOUT <i class="fa-solid fa-angle-down"></i>
+                                <Link  className='hover:text-blue-600 font-bold text-sm' > ABOUT <i class="fa-solid fa-angle-down"></i>
                                 {showDropdown && (
-                                    <ul className="absolute left-0 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
+                                    <ul className="absolute left-0 top-4 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
                                         <li className="text-gray-600 hover:text-blue-600">
-                                            <a href="/about#smithageFX leadership">SGFX Leadership</a>
+                                            <Link to="/about">SGFX Leadership</Link>
                                         </li>
                                         <li className="text-gray-600 hover:text-blue-600">
                                             <a href="/about#history">History</a>
@@ -122,8 +122,8 @@ export default function NavBar() {
                                  </Link>
                             </li>
 
-                            <li className="text-gray-600 hover:text-blue-600">
-                            <Link to="/services" className=''> SERVICES </Link>
+                            <li className=" hover:text-blue-600">
+                            <Link to="/services" className='font-bold text-sm'> SERVICES </Link>
                             </li>
 
                             <li
@@ -132,18 +132,13 @@ export default function NavBar() {
                                 onMouseLeave={handleMouseLeave2}
                                 onClick={onMouseClick2}
                             >
-                                <Link className='' > ACADEMY <i class="fa-solid fa-angle-down"></i>
+                                <Link className='hover:text-blue-600 font-bold text-sm' > ACADEMY <i class="fa-solid fa-angle-down"></i>
                                 {showDropdown2 && (
-                                    <ul className="absolute left-0 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
+                                    <ul className="absolute left-0 top-4 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
                                         <li className="text-gray-600 hover:text-blue-600">
-                                            <a href="/about#smithageFX leadership">SGFX Leadership</a>
+                                            <Link to="/academy">Why SmithageFX</Link>
                                         </li>
-                                        <li className="text-gray-600 hover:text-blue-600">
-                                            <a href="/about#history">History</a>
-                                        </li>
-                                        <li className="text-gray-600 hover:text-blue-600">
-                                            <a href="/about#vision">Vision</a>
-                                        </li>
+                                     
                                     </ul>
                                 )}
                                  </Link>
@@ -155,11 +150,11 @@ export default function NavBar() {
                                 onMouseLeave={handleMouseLeave3}
                                 onClick={onMouseClick3}
                             >
-                                <Link  className='' > PORTFOLIO <i class="fa-solid fa-angle-down"></i>
+                                <Link  className='hover:text-blue-600 font-bold text-sm'> PORTFOLIO <i class="fa-solid fa-angle-down"></i>
                                 {showDropdown3 && (
-                                    <ul className="absolute left-0 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
+                                    <ul className="absolute left-0 top-4 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
                                         <li className="text-gray-600 hover:text-blue-600">
-                                            <a href="/about#smithageFX leadership">SGFX Leadership</a>
+                                        <Link to="/projects">Projects</Link>
                                         </li>
                                        
                                     </ul>
@@ -167,8 +162,8 @@ export default function NavBar() {
                                  </Link>
                             </li>
 
-                            <li className="text-gray-600 hover:text-blue-600">
-                            <Link to="/contact" className=''> CONTACT </Link>
+                            <li className=" hover:text-blue-600">
+                            <Link to="/contact" className='font-bold text-sm'> CONTACT </Link>
                             </li>
 
                         </ul>
