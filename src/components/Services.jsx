@@ -6,13 +6,7 @@ import { BsFillHouseLockFill } from "react-icons/bs";
 import { AiOutlineBank } from "react-icons/ai";
 import { BiDiamond } from "react-icons/bi";
 import { BsCoin } from "react-icons/bs";
-import Navbar from './navbar/Navbar';
-// import './Navbar.css'
-
-function Services() {
-  return (
-    <div>
-      <Navbar />
+    <Layout>
       <div className="grid md:grid-cols-3  gap-8 p-5 text-center ">
 
         <div className="bg-white services-box">
@@ -103,6 +97,7 @@ function Services() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }
 

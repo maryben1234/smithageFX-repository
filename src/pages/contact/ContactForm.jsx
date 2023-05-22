@@ -44,25 +44,28 @@ const ContactForm = () => {
         className="formWrapper"
       >
         <form ref={form} onSubmit={sendEmail}>
-          {status && renderAlert()}
+
           <div className="formWrapper__inputGrid">
             <input
               type="text"
               placeholder="Your Name"
               className="formWrapper__inputGrid--itemOne"
               name="user_name"
+              required
             />
             <input
-              type="text"
+              type="email"
               placeholder="Your Email"
               className="formWrapper__inputGrid--itemTwo"
               name="user_email"
+              required
             />
             <input
               type="text"
               placeholder="Subject"
               className="formWrapper__inputGrid--itemThree"
               name="user_subject"
+              required
             />
           </div>
           <textarea
@@ -71,7 +74,10 @@ const ContactForm = () => {
             rows="10"
             placeholder="Message"
             name="message"
+            required
           ></textarea>
+
+          {status && renderAlert()}
 
           <input
             type="submit"
