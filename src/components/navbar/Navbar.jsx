@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom'
 import './navbar.css'
 import Logo from '../../images/smithagepic.jpg'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -23,9 +29,16 @@ export default function NavBar() {
         setShowDropdown(false);
     };
 
-    const handleMouseLeave2 = () => {
-        setShowDropdown2(false);
-    };
+    // const handleMouseLeave2 = () => {
+    //     setShowDropdown2(false);
+    // };
+
+    const handleMouseLeave2 = (event) => {
+        // Check if the mouse is not over the dropdown or its child elements
+        if (!event.currentTarget.contains(event.relatedTarget)) {
+          setShowDropdown2(false);
+        }
+      }
 
     const handleMouseLeave3 = () => {
         setShowDropdown3(false);
@@ -42,6 +55,8 @@ export default function NavBar() {
     const onMouseClick3 = () => {
         setShowDropdown3(!showDropdown3);
     }
+
+  
 
     return (
         <nav className="w-full bg-white shadow sticky top-0 z-20 ">
@@ -96,7 +111,7 @@ export default function NavBar() {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className=" hover:text-blue-600">
-                            <Link to="/" className='font-bold text-sm'> HOME </Link>
+                                <Link to="/" className='font-bold text-sm'> HOME </Link>
                             </li>
 
                             <li
@@ -105,43 +120,58 @@ export default function NavBar() {
                                 onMouseLeave={handleMouseLeave}
                                 onClick={onMouseClick}
                             >
-                                <Link  className='hover:text-blue-600 font-bold text-sm' > ABOUT <i class="fa-solid fa-angle-down"></i>
-                                {showDropdown && (
-                                    <ul className="absolute left-0 top-4 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
-                                        <li className="text-gray-600 hover:text-blue-600">
-                                            <Link to="/about">SGFX Leadership</Link>
-                                        </li>
-                                        <li className="text-gray-600 hover:text-blue-600">
-                                            <Link to="/about">History</Link>
-                                        </li>
-                                        <li className="text-gray-600 hover:text-blue-600">
-                                            <Link to="/about">Vision</Link>
-                                        </li>
-                                    </ul>
-                                )}
-                                 </Link>
+                                <Link className='hover:text-blue-600 font-bold text-sm' > ABOUT <i class="fa-solid fa-angle-down"></i>
+                                    {showDropdown && (
+                                        <ul className="absolute left-0 top-4 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
+                                            <li className="text-gray-600 hover:text-blue-600">
+                                                <Link to="/about">SGFX Leadership</Link>
+                                            </li>
+                                            <li className="text-gray-600 hover:text-blue-600">
+                                                <Link to="/about">History</Link>
+                                            </li>
+                                            <li className="text-gray-600 hover:text-blue-600">
+                                                <Link to="/about">Vision</Link>
+                                            </li>
+                                        </ul>
+                                    )}
+                                </Link>
                             </li>
 
-                            <li className=" hover:text-blue-600">
+                            {/* <li className=" hover:text-blue-600">
                             <Link to="/services" className='font-bold text-sm'> SERVICES </Link>
-                            </li>
+                            </li> */}
 
                             <li
                                 className="relative"
                                 onMouseOver={handleMouseOver2}
                                 onMouseLeave={handleMouseLeave2}
-                                onClick={onMouseClick2}
+                                // onClick={onMouseClick2}
                             >
-                                <Link className='hover:text-blue-600 font-bold text-sm' > ACADEMY <i class="fa-solid fa-angle-down"></i>
-                                {showDropdown2 && (
-                                    <ul className="absolute left-0 top-4 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
-                                        <li className="text-gray-600 hover:text-blue-600">
-                                            <Link to="/academy">Why SmithageFX</Link>
-                                        </li>
-                                     
-                                    </ul>
-                                )}
-                                 </Link>
+                                <a className='hover:text-blue-600 font-bold text-sm cursor-pointer' > SERVICES
+                                    {/* <i class="fa-solid fa-angle-down"></i> */} <FontAwesomeIcon icon={faAngleDown} />
+
+                                    {showDropdown2 && (
+                                        <ul className="absolute left-0 top-4 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
+                                            <li className="text-gray-600 hover:text-blue-600">
+                                                <Link to="/services">Offers</Link>
+                                            </li>
+                                            <li className="text-gray-600 hover:text-blue-600">
+                                                <Link to="/academy">Academy</Link>
+                                            </li>
+
+                                            <li className="text-gray-600 hover:text-blue-600">
+                                                <a  href="https://www.myfxbook.com"  target="_blank" rel="noopener noreferrer">FXbook</a>
+                                            </li>
+
+                                            <li className="text-gray-600 hover:text-blue-600">
+                                                <a href="https://portal.equiticlients.com" target="_blank" rel="noopener noreferrer">
+                                                Equiti Brokerage 
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    )}
+                                </a>
                             </li>
 
                             <li
@@ -150,20 +180,20 @@ export default function NavBar() {
                                 onMouseLeave={handleMouseLeave3}
                                 onClick={onMouseClick3}
                             >
-                                <Link  className='hover:text-blue-600 font-bold text-sm'> PORTFOLIO <i class="fa-solid fa-angle-down"></i>
-                                {showDropdown3 && (
-                                    <ul className="absolute left-0 top-4 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
-                                        <li className="text-gray-600 hover:text-blue-600">
-                                        <Link to="/projects">Projects</Link>
-                                        </li>
-                                       
-                                    </ul>
-                                )}
-                                 </Link>
+                                <Link className='hover:text-blue-600 font-bold text-sm'> PORTFOLIO <i class="fa-solid fa-angle-down"></i>
+                                    {showDropdown3 && (
+                                        <ul className="absolute left-0 top-4 w-40 mt-2 space-y-2 bg-white rounded-sm p-4 shadow-md z-10">
+                                            <li className="text-gray-600 hover:text-blue-600">
+                                                <Link to="/projects">Gallery</Link>
+                                            </li>
+
+                                        </ul>
+                                    )}
+                                </Link>
                             </li>
 
                             <li className=" hover:text-blue-600">
-                            <Link to="/contact" className='font-bold text-sm'> CONTACT </Link>
+                                <Link to="/contact" className='font-bold text-sm'> CONTACT </Link>
                             </li>
 
                         </ul>
