@@ -6,11 +6,16 @@ import image1 from "../images/image1.jpg";
 import image2 from "../images/image2.jpg";
 import image3 from "../images/image3.jpg";
 import image12 from  "../images/image12.jpeg";
-import './About.css'
+import './About.css';
+
+import Navbar from './navbar/Navbar';
 
 function About() {
   return (
-    <div className="">
+    <div> 
+    <Navbar/>
+    
+
       <section>
         <div className="grid md:grid-cols-1   text-center mr-100 ">
           <div className=" text-black md:space-x-6  p-10  ">
@@ -25,7 +30,7 @@ function About() {
                 <img src={image3} className=" image1"></img>
               </div>
 
-              <p className="mt-7  text-center animate-bounce r  ">
+              <p className="mt-7  text-center  ">
                 Dr. SMITH DENNIC BENJAMIN is the Chief Executive Officer and
                 Director of SMITHAGEFX. He holds a Bachelor of Engineering
                 degree in Electrical and Electronics Engineering, university of
@@ -89,7 +94,7 @@ function About() {
               </div>
 
               <p className="mt-5  text-center  ">
-              Mr. Emmanuel Bassey, He is a graduates of Political Science and Public Administration , university of Uyo, uyo Akwa Ibom Nigeria. He has a high level insight into the trading world. He is also commodity/Synthetic trader, He has trained and still mentoring students all around the world. He is performance driven and smart trader, trainer and mentor with a proven track record of extraordinary achievements in conducting detailed technical and fundamental market analysis with a close one to one training and mentorship session and programs. He provide beneficial trading and financial advice to the clients.
+              Mr. Emmanuel Bassey, He is a graduates of Political Science and Public Administration , university of Uyo, uyo Akwa Ibom Nigeria. He has a high level insight into the trading world. He is also commodity/Synthetic trader, He has trained and still mentoring students all around the world. He his performance driven and a smart trader, trainer and mentor with a proven track record of extraordinary achievements in conducting detailed technical and fundamental market analysis with a close one to one training and mentorship session and programs. He provide beneficial trading and financial advice to the clients.
               </p>
             </div>
           </div>

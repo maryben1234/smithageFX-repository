@@ -25,7 +25,7 @@ const ContactDetails = () => {
               <div>
                 <strong>Office</strong>
                 <p>
-                 34 Brooks Street, Uyo, Akwa Ibom State
+                 43 Brooks Street, Uyo, Akwa Ibom State
                 </p>
               </div>
             </aside>
@@ -38,7 +38,7 @@ const ContactDetails = () => {
               <p>Email:</p>
             </div>
             <aside>
-              <a href="mailto:maryben698@gmail.com">maryben698@gmail.com</a>
+              <a href="mailto:maryben698@gmail.com">smithagecorporation@gmail.com</a>
             </aside>
           </section>
           <section className="wrapper__elem--itemThree">

@@ -13,10 +13,10 @@ function Home() {
 
           <AnimationOnScroll animateIn="animate__fadeInUp">
           <div className="py-10 text-center">
-              <h2 className="font-bold text-3xl py-2">ENERGY TRANSITION</h2>
+              <h2 className="font-bold text-3xl py-2"> TRANSITION</h2>
              
               <p className="px-20">
-              We are committed to ensuring sustainability and setting a goal to enable household and industrial energy transition in becoming carbon neutral by 2030. The majority of our progress is achieved through the absolute reduction of the utilization of products and devices with direct emission of greenhouse gasses. Hence, we engage in sales and installation of household and industrial electrical equipment with low energy consumption rate with little or no carbon emission, smart power sourcing and the elimination of resource wastage. We look forward to partnering with our customers to aid them succeed in meeting their energy/power ambitions.
+              SmithageFX Academy provides comprehensive training programs designed to equip individuals with the necessary skills and knowledge to navigate the forex market effectively. Our academy offers courses tailored for beginners, intermediate, advanced, and professional traders, enabling them to tap into the vast opportunities presented by this market and achieve consistent profitability. Throughout the training, we emphasize the importance of implementing robust risk management strategies to ensure capital preservation and minimize potential losses. By enrolling in our programs, individuals gain the expertise required to access the forex market confidently and leverage its potential for generating sustainable profits.
               </p>
           </div>
             </AnimationOnScroll>

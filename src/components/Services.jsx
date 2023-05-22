@@ -6,7 +6,7 @@ import { BsFillHouseLockFill } from "react-icons/bs";
 import { AiOutlineBank } from "react-icons/ai";
 import { BiDiamond } from "react-icons/bi";
 import { BsCoin } from "react-icons/bs";
-import Navbar from './navbar/Navbar'
+import Navbar from './navbar/Navbar';
 // import './Navbar.css'
 
 function Services() {
