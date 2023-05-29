@@ -6,7 +6,13 @@ import { BsFillHouseLockFill } from "react-icons/bs";
 import { AiOutlineBank } from "react-icons/ai";
 import { BiDiamond } from "react-icons/bi";
 import { BsCoin } from "react-icons/bs";
-    <Layout>
+import Layout from "./layout/Layout";
+
+function Services() {
+  return (
+
+    
+<Layout>
       <div className="grid md:grid-cols-3  gap-8 p-5 text-center ">
 
         <div className="bg-white services-box">
@@ -56,11 +62,8 @@ import { BsCoin } from "react-icons/bs";
           </div>
         </div>
       </div>
-      <div className=" ">
       
-  
       
-      </div>
 
       <div className="grid md:grid-cols-3  gap-8 p-5 text-center ">
         <div className="bg-white services-box">
@@ -96,7 +99,8 @@ import { BsCoin } from "react-icons/bs";
           </div>
         </div>
       </div>
-    </div>
+  
+  
     </Layout>
   );
 }

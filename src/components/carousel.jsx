@@ -24,7 +24,7 @@ export default function Carousels() {
                     <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
                             <div >
                                 <p>
-                                    Welcome to SmithFx
+                                    Welcome to SmithageFx
                                 </p>
                             </div>
                         </AnimationOnScroll>
@@ -38,7 +38,7 @@ export default function Carousels() {
                         <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
                             <div >
                                 <p>
-                                    Welcome to SmithFx
+                                    Welcome to SmithageFx
                                 </p>
                             </div>
                         </AnimationOnScroll>
@@ -53,7 +53,7 @@ export default function Carousels() {
                         <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
                             <div >
                                 <p>
-                                    Welcome to SmithFx
+                                    Welcome to SmithageFx
                                 </p>
                             </div>
                         </AnimationOnScroll>
