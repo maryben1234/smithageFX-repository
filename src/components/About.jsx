@@ -20,7 +20,7 @@ function About() {
 
             <p className=" pt-4">
             <i className="text-justify text-muted">
-              SmithageFX (SGFX) is afast-growing from which deal with financial
+              SmithageFX (SGFX) is a fast-growing from which deal with financial
               market, based on the foreign exchange trading profolio management,
               training and mentorship programs, that provide high-quality,
               in-depth knowledge of financial market in the simplicity and
@@ -34,7 +34,7 @@ function About() {
             <h1 id="history" className=" text-left font-semibold text-1xl  ">HISTORY</h1>
             <p className="pt-4">
             <i className="text-justify text-muted">
-            Foreign Exchande date back to encient time, when traders frist began
+            Foreign Exchande date back to ancient time, when traders first began
             exchanging coin from different countriess. However, the foreign
             exchange itself is the newest of the financial markets. In the last
             undergone some dramatic transformations. The Bretton woods
@@ -143,7 +143,7 @@ function About() {
               </div>
 
               <p className="mt-7 text-center text-sm px-4 leading-5">
-                mr. Godwin Akpan .He is asset manager in SmithageFX company. He  is also commodity/Synthetic trader, He has trained and still mentoring students all around the world.
+                Mr. Godwin Akpan. He is an asset manager in SmithageFX company. He  is also a commodity and synthetic trader, He has trained and still mentoring students all around the world.
               </p>
             </div>
 
