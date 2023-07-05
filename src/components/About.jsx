@@ -20,7 +20,7 @@ function About() {
         <div className="grid md:grid-cols-1   text-center mr-100 ">
           <div className=" text-black md:space-x-6  p-10  ">
             <div className="">
-              <div className="col-lg-8 offset-lg-2 p-10 ">
+              <div className="col-lg-8 offset-lg-2 p-5">
                 <h1 className=" text-center  "> SMITHAGEFX LEADERSHIP</h1>
               </div>
               <div className=" text-center text-2xl md:text-base  hover:scale-110 transition duration-300 ease-in-out ">
@@ -31,7 +31,7 @@ function About() {
               </div>
 
               <p className="mt-7  text-center  ">
-                Dr. SMITH DENNIC BENJAMIN is the Chief Executive Officer and
+                Dr.Benjamin Smith is the Chief Executive Officer and
                 Director of SMITHAGEFX. He holds a Bachelor of Engineering
                 degree in Electrical and Electronics Engineering, university of
                 Benin (BSc.), and also Masters of Sciences(MSc.)in Engineering

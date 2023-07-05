@@ -19,6 +19,7 @@ export default function Carousels() {
                 <div>
                     <div className='md:h-[800px] h-fit'>
                         <img src={Image1} className='' />
+                
                       
 
                     </div>
