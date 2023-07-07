@@ -13,7 +13,7 @@ function Footer() {
       <div className=" grid md:grid-cols-3 About-footerdiv text-white gap-5  p-5 mt-10">
         <div className="text-center">
           <p className="mt-2 font-bold">SMITHAGEFX</p>
-          <p className=" "> Email: maryben698@gmail.com</p>
+          <p className=" "> Email: smithagecorporation@gmail.com</p>
         </div>
         <div className=" text-left">
           <p className="p-2 font-bold ">USEFUL LINKS</p>
