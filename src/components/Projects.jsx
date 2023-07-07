@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+// import coo from "../images/coo.jpeg";
 import Layout from './layout/Layout'
 
 function Projects() {
@@ -30,6 +31,8 @@ function Projects() {
                     <p className='font-bold text-2xl py-6'>During our Ceremony</p>
 
                     <div className="h-fit md:h-[38rem] grid md:grid-cols-4 sm:grid-cols-3 grid-rows-2 gap-4">
+
+                     
                         <img className='rounded' src="https://scontent.fabb1-1.fna.fbcdn.net/v/t39.30808-6/236015037_221407819908411_9003373817512537699_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9C0mmDe4DD4AX8rxexC&_nc_zt=23&_nc_ht=scontent.fabb1-1.fna&oh=00_AfATxWzumgapPMA7sG3hNE1-4OYCRi-cYDvTYBBS0gGmlA&oe=6481A6F3" alt="" />
                         
                         {/* <img className='rounded' src="https://scontent.fabb1-1.fna.fbcdn.net/v/t39.30808-6/236435554_221406769908516_4774824890540626051_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=EYoSamibJScAX8dx2Vu&_nc_zt=23&_nc_ht=scontent.fabb1-1.fna&oh=00_AfClERtKJ8JxcN5XU80qLhgmn1MTNWRBUlrDjDBBGcLsDw&oe=6480E047" alt="" /> */}
@@ -40,12 +43,11 @@ function Projects() {
                         
                         <img className='rounded' src="https://scontent.fabb1-2.fna.fbcdn.net/v/t39.30808-6/236991726_221406856575174_1696972825408427723_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=SINqg9ZeQ_QAX9_sU2o&_nc_zt=23&_nc_ht=scontent.fabb1-2.fna&oh=00_AfBI-4Kmyq5uFLWNp9i5c1QvVr3i8Si8u9i6-iR2qNBPSw&oe=64828129" alt="" />
 
-                        <img className='rounded' src="https://scontent.fabb1-2.fna.fbcdn.net/v/t39.30808-6/236231776_221406906575169_2579638441285570952_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=bnc56M0W0WQAX--5VoO&_nc_zt=23&_nc_ht=scontent.fabb1-2.fna&oh=00_AfB728E-9er9Oi73Lou5umWBwQb7gGlEJRSGLQa7OgIRqA&oe=6481C863" alt="" />
-
+                        
                     </div>
                 </div>
             </div>
-        </Layout >
+        </Layout>
     )
 }
 

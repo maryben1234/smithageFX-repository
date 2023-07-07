@@ -10,8 +10,9 @@ import Layout from "./layout/Layout";
 
 function Services() {
   return (
-    <Layout>
-    <div>
+
+    
+<Layout>
       <div className="grid md:grid-cols-3  gap-8 p-5 text-center ">
 
         <div className="bg-white services-box">
@@ -61,11 +62,8 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className=" ">
       
-  
       
-      </div>
 
       <div className="grid md:grid-cols-3  gap-8 p-5 text-center ">
         <div className="bg-white services-box">
@@ -101,7 +99,8 @@ function Services() {
           </div>
         </div>
       </div>
-    </div>
+  
+  
     </Layout>
   );
 }

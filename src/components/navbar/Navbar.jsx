@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom'
-import './navbar.css'
-import Logo from '../../images/smithagepic.jpg'
+import './navbar.css';
+import Logo from '../../images/smithagepic.jpg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
