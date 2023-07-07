@@ -50,6 +50,8 @@ const ContactDetails = () => {
             </div>
             <aside>
               <a href="tel:+ 8068482653">08068482653</a>
+              <a href="tel:+ 08172070668">08172070668</a>
+              <a href="tel:+ 08068838147">08068838147</a>
              
             </aside>
           </section>

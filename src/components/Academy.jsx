@@ -16,14 +16,7 @@ function Academy() {
               Why SmithageFX{" "}
             </h3>
             <h3 className="  text-black md:max-w-4xl mx-auto leading-base py-2 px-4 text-justify">
-              SmithageFX Academy offers a range of training programs, from basic
-              to professional, focused on teaching individuals how to navigate the
-              forex market successfully. With an emphasis on risk management, our
-              courses empower traders to leverage the abundant opportunities
-              available in the market and achieve consistent profitability. By
-              enrolling in our academy, individuals gain the skills and knowledge
-              needed to access the forex market confidently and generate
-              sustainable profits.
+            SmithageFX Academy offers a range of training programs, from basic to professional, focused on teaching individuals how to navigate the forex market successfully. We help you learn how to manage your accounts and access insightful reports and technical analysis among many more features.
             </h3>
           </div>
 
@@ -31,14 +24,8 @@ function Academy() {
             <div className="  grid md:grid-cols-2 p-5 gap-10 ">
               <div className="">
                 <h1 className="p-10 text-blue-200">
-                  Start trading digital currencies in 12-month certificate course
-                  with these Packages (Basic, Intermediate and Advance ) in areas
-                  such as Introduction to Forex and platform Set Up , Forex
-                  Broker, forex analysis ( Fundamental,Technical and Sentimental).
-                  Designed for continuing professional traders, these flexible
-                  courses will allow you to tailor and enhance your skills.
-                  Individuals gain the skills and knowledge needed to access the
-                  forex market confidently and generate sustainable profits.
+                  start your trading journey in Digital Currencies with our 12-month Certificate programme that covers Basic through Advanced knowledge
+                  of trading. In adddition to the technical know-how of the market, psychological trading is given to aspiring traders to equip their trading process and sharpen their skills. These knowledge gained would equip traders with the necessities to access the global financial market and generate sustainable profits.
                 </h1>
               </div>
               <div className="">
@@ -59,18 +46,18 @@ function Academy() {
                 ></img>
               </div>
               <div className=" px-4">
-                <p className="text-black font-bold text-4x1">Forex Market</p>
+                <p className="text-black font-bold text-4x1"> The Forex Market</p>
 
                 <p className=" text-black text-justify">
-                  The FX market is the only truly continuous and nonstop trading
+                  The FX market is the only truly continuous and non-stop trading
                   market in the world. In the past, the forex market was dominated
                   by institutional firms and large banks, which acted on behalf of
-                  clients. But it has become more retail-oriented in recent
-                  years—traders and investors of all sizes participate in it.
+                  clients. Right now, it has become more retail-oriented in recent
+                  years, letting traders and investors of all sizes participate in it.
                 </p>
 
                 <p className="pt-5 font-bold text-4x1 text-black">
-                  How Does the Forex Market Work
+                  How Does the Forex Market Work?
                 </p>
 
                 <h1 className="text-black text-justify">
@@ -78,9 +65,9 @@ function Academy() {
                   exchange you may do while traveling abroad: A trader buys one
                   currency and sells another, and the exchange rate constantly
                   fluctuates based on supply and demand. Currencies are traded in
-                  the foreign exchange market, a global marketplace that’s open 24
-                  hours a day Monday through Friday. All forex trading is
-                  conducted over the counter (OTC), meaning there’s no physical
+                  the foreign exchange market, a global marketplace that opens 24
+                  hours a day; Monday through Friday. All forex trading is
+                  conducted over the counter (OTC), meaning there is no physical
                   exchange (as there is for stocks) and a global network of banks
                   and other financial institutions oversee the market (instead of
                   a central exchange, like the New York Stock Exchange).
