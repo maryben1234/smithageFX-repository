@@ -19,17 +19,20 @@ export default function Carousels() {
             <div className=''>
                 <div>
                     <div className='md:h-[800px] h-fit'>
-                        <img src={Image1} className='' />
+                            <img src={Image1} className='' />
 
 
                     </div>
                     <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
                         <div className='p-4 pb-10'>
                             <p className='text-left text-4xl mb-4'>
-                                Welcome to SmithFx
+                                
+                                Welcome to SmithageFX 
                             </p>
 
-                            <p className=' text-left text-base mb-4'>SmithageFX Academy offers a range of training programs, from basic to professional, focused on teaching individuals how to navigate the forex market successfully.</p>
+                            <p className=' text-left text-base mb-4'>
+                            Training/Trading Academy
+                            </p>
 
                             <button>
                                 <Link to="/academy">
@@ -49,9 +52,14 @@ export default function Carousels() {
                     <div className='md:h-[800px] h-fit'>
                         <img src={Image2} className='' />
                         <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
+                            <div >
+                                <p>
+                                    Welcome to SmithageFx
+                                </p>
                                 <div className='p-4 pb-10'>
                                     <p className='text-left text-4xl mb-4'>
-                                        Welcome to SmithFx
+                                        
+                                    Training/Trading Academy
                                     </p>
 
                                     <p className=' text-left text-base mb-4'>Get daily payouts with our award winning partner program.</p>
@@ -63,6 +71,7 @@ export default function Carousels() {
                                     </button>
 
                                 </div>
+                                </div>
                         </AnimationOnScroll>
                     </div>
                 </div>
@@ -73,9 +82,9 @@ export default function Carousels() {
                     <div className='md:h-[800px] h-fit'>
                         <img src={Image3} className='' />
                         <AnimationOnScroll animateIn="animate__fadeInUp" className='carousel-text'>
-                            <div className='p-4 pb-10'>
-                                <p className='text-left text-4xl mb-4'>
-                                    Welcome to SmithFx
+                            <div >
+                                <p>
+                                    Welcome to SmithageFx
                                 </p>
 
                                 <p className=' text-left text-base mb-4'>Manage your accounts and access insightful reports and technical analysis among many more features.</p>
